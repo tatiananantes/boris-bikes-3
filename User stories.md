@@ -19,7 +19,7 @@ Verbs: use, release
 
 | Objects  | Messages        |
 | -------- | --------------- |
-| Person | |
+| Customer | |
 | Bike, Docking Station | release_bike_from_docking_station |
 
 As a person,
@@ -29,8 +29,7 @@ I'd like to see if a bike is working
 Nouns: bike
 Verbs: working
 
-
 | Objects  | Messages        |
 | -------- | --------------- |
-| Person | |
+| Customer | |
 | Bike | bike_working? |
