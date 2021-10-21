@@ -26,8 +26,10 @@ describe DockingStation do
     expect(docking_station.bike).to eq bike
   end
   
-  it 'raises exception if docking station has no bike' do
-    docking_station = DockingStation.new
-    expect { docking_station.release_bike }.to raise_exception 
+  describe '#release_bike' do
+    it 'raises exception if docking station has no bike' do
+      docking_station = DockingStation.new
+      expect { docking_station.release_bike }.to raise_exception 
+    end
   end
 end
