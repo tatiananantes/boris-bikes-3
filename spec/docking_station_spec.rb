@@ -7,11 +7,6 @@ describe DockingStation do
     # end
   it { is_expected.to respond_to{docking_station.release_bike} }
 
-  it "creates a new bike when the release bike method is called" do
-    station = DockingStation.new
-    expect{bike = station.release_bike}.not_to raise_error 
-  end
-
   it "docks a bike" do
     docking_station = DockingStation.new
     bike = Bike.new
@@ -30,5 +25,9 @@ describe DockingStation do
     docking_station.dock(bike)
     expect(docking_station.bike).to eq bike
   end
-
+  
+  it 'raises exception if docking station has no bike' do
+    docking_station = DockingStation.new
+    expect { docking_station.release_bike }.to raise_exception 
+  end
 end
