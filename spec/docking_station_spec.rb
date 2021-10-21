@@ -1,5 +1,4 @@
-require 'docking_station'
-require 'bike'
+require_relative '../lib/docking_station'
 
 describe DockingStation do
     # it 'releases a bike' do
