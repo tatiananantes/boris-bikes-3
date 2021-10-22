@@ -4,6 +4,6 @@ class Bike
       "yes"
     else
       "no"
+    end
   end
-end
 end
